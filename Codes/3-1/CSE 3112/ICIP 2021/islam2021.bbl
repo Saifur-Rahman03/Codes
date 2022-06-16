@@ -1,0 +1,91 @@
+\begin{thebibliography}{10}
+
+\bibitem{H.265}
+Gary~J Sullivan, Jens-Rainer Ohm, Woo-Jin Han, Thomas Wiegand, et~al.,
+\newblock ``Overview of the high efficiency video coding(hevc) standard,''
+\newblock {\em IEEE Transactions on circuits and systems for video technology},
+  vol. 22, no. 12, pp. 1649--1668, 2012.
+
+\bibitem{AV1}
+``{Alliance for Open Media, “AOMedia Video 1 (AV1) 2018”},'' [Online],
+  Available: https://aomedia.org/.
+
+\bibitem{kim2012block}
+Il-Koo Kim, Junghye Min, Tammy Lee, Woo-Jin Han, and JeongHoon Park,
+\newblock ``Block partitioning structure in the hevc standard,''
+\newblock {\em IEEE transactions on circuits and systems for video technology},
+  vol. 22, no. 12, pp. 1697--1706, 2012.
+
+\bibitem{vanne2014efficient}
+Jarno Vanne, Marko Viitanen, and Timo~D H{\"a}m{\"a}l{\"a}inen,
+\newblock ``Efficient mode decision schemes for hevc inter prediction,''
+\newblock {\em IEEE Transactions on Circuits and Systems for Video Technology},
+  vol. 24, no. 9, pp. 1579--1593, 2014.
+
+\bibitem{heindel2015fast}
+Andreas Heindel and Andr{\'e} Kaup,
+\newblock ``Fast intra mode decision in hevc using early distortion
+  estimation,''
+\newblock in {\em 2015 IEEE China Summit and International Conference on Signal
+  and Information Processing (ChinaSIP)}. IEEE, 2015, pp. 559--563.
+
+\bibitem{choi2011coding}
+Kiho Choi, Sang-Hyo Park, and Euee~S Jang,
+\newblock ``Coding tree pruning based cu early termination,''
+\newblock {\em JCT-VC document, JCTVC-F092}, 2011.
+
+\bibitem{gweon2012early}
+Ryeong-hee Gweon and Yung-Lyul Lee,
+\newblock ``Early termination of cu encoding to reduce hevc complexity,''
+\newblock {\em IEICE Transactions on Fundamentals of Electronics,
+  Communications and Computer Sciences}, vol. 95, no. 7, pp. 1215--1218, 2012.
+
+\bibitem{yang2011early}
+J~Yang, J~Kim, K~Won, H~Lee, and B~Jeon,
+\newblock ``Early skip detection for hevc,''
+\newblock {\em document JCTVC-G543}, 2011.
+
+\bibitem{heindel2016fast}
+Andreas Heindel, Thomas Haubner, and Andr{\'e} Kaup,
+\newblock ``Fast cu split decisions for hevc inter coding using support vector
+  machines,''
+\newblock in {\em 2016 Picture Coding Symposium (PCS)}. IEEE, 2016, pp. 1--5.
+
+\bibitem{zhang2015machine}
+Yun Zhang, Sam Kwong, Xu~Wang, Hui Yuan, Zhaoqing Pan, and Long Xu,
+\newblock ``Machine learning-based coding unit depth decisions for flexible
+  complexity allocation in high efficiency video coding,''
+\newblock {\em IEEE Transactions on Image Processing}, vol. 24, no. 7, pp.
+  2225--2238, 2015.
+
+\bibitem{westland2019decision}
+Natasha Westland, Andr{\'e}~Seixas Dias, and Marta Mrak,
+\newblock ``Decision trees for complexity reduction in video compression,''
+\newblock in {\em 2019 IEEE International Conference on Image Processing
+  (ICIP)}. IEEE, 2019, pp. 2666--2670.
+
+\bibitem{bossen2013common}
+Frank Bossen et~al.,
+\newblock ``Common test conditions and software reference configurations,''
+\newblock {\em JCTVC-L1100}, vol. 12, 2013.
+
+\bibitem{han2011data}
+Jiawei Han, Jian Pei, and Micheline Kamber,
+\newblock {\em Data mining: concepts and techniques},
+\newblock Elsevier, 2011.
+
+\bibitem{breiman1984classification}
+L~Breiman, J~Friedman, CJ~Stone, and RA~Olshen,
+\newblock ``Classification and 715 regression trees, the wadsworth and
+  brooks-cole statistics-probability series,'' 1984.
+
+\bibitem{HM}
+``{HM Reference Software for High Efficiency Visdeo Coding (HEVC)},'' [Online],
+  Available: https://hevc.hhi.fraunhofer.de/.
+
+\bibitem{bjontegaard2001calculation}
+Gisle Bjontegaard,
+\newblock ``Calculation of average psnr differences between rd-curves,''
+\newblock {\em VCEG-M33}, 2001.
+
+\end{thebibliography}

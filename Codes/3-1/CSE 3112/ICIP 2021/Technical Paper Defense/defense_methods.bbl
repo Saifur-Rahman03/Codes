@@ -1,0 +1,102 @@
+\begin{thebibliography}{10}
+
+\bibitem{hendrycks2016early}
+Dan Hendrycks and Kevin Gimpel,
+\newblock ``Early methods for detecting adversarial images,''
+\newblock {\em arXiv preprint arXiv:1608.00530}, 2016.
+
+\bibitem{zhang2020hrae}
+Jiliang Zhang, Shuang Peng, Yupeng Hu, Fei Peng, Wei Hu, Jinmei Lai, Jing Ye,
+  and Xiangqi Wang,
+\newblock ``Hrae: hardware-assisted randomization against adversarial example
+  attacks,''
+\newblock in {\em 2020 IEEE 29th Asian Test Symposium (ATS)}. IEEE, 2020, pp.
+  1--6.
+
+\bibitem{kong2021survey}
+Zixiao Kong, Jingfeng Xue, Yong Wang, Lu~Huang, Zequn Niu, and Feng Li,
+\newblock ``A survey on adversarial attack in the age of artificial
+  intelligence,''
+\newblock {\em Wireless Communications and Mobile Computing}, vol. 2021, 2021.
+
+\bibitem{ju2020abs}
+An~Ju and David Wagner,
+\newblock ``E-abs: extending the analysis-by-synthesis robust classification
+  model to more complex image domains,''
+\newblock in {\em Proceedings of the 13th ACM Workshop on Artificial
+  Intelligence and Security}, 2020, pp. 25--36.
+
+\bibitem{papernot2016distillation}
+Nicolas Papernot, Patrick McDaniel, Xi~Wu, Somesh Jha, and Ananthram Swami,
+\newblock ``Distillation as a defense to adversarial perturbations against deep
+  neural networks,''
+\newblock in {\em 2016 IEEE symposium on security and privacy (SP)}. IEEE,
+  2016, pp. 582--597.
+
+\bibitem{carrara2018adversarial}
+Fabio Carrara, Rudy Becarelli, Roberto Caldelli, Fabrizio Falchi, and Giuseppe
+  Amato,
+\newblock ``Adversarial examples detection in features distance spaces,''
+\newblock in {\em Proceedings of the European Conference on Computer Vision
+  (ECCV) Workshops}, 2018, pp. 0--0.
+
+\bibitem{gu2014towards}
+Shixiang Gu and Luca Rigazio,
+\newblock ``Towards deep neural network architectures robust to adversarial
+  examples,''
+\newblock {\em arXiv preprint arXiv:1412.5068}, 2014.
+
+\bibitem{qian2020towards}
+YG~Qian, Xi-Ming Zhang, Bin Wang, Wei Li, Jian-Hai Chen, Wujie Zhou, and
+  Jing-Sheng Lei,
+\newblock ``Towards robust dnns: a taylor expansion-based method for generating
+  powerful adversarial examples,''
+\newblock {\em CoRR}, 2020.
+
+\bibitem{shi2018schmidt}
+Yucheng Shi and Yahong Han,
+\newblock ``Schmidt: Image augmentation for black-box adversarial attack,''
+\newblock in {\em 2018 IEEE International Conference on Multimedia and Expo
+  (ICME)}. IEEE, 2018, pp. 1--6.
+
+\bibitem{laishram2016curie}
+Ricky Laishram and Vir~Virander Phoha,
+\newblock ``Curie: A method for protecting svm classifier from poisoning
+  attack,''
+\newblock {\em arXiv preprint arXiv:1606.01584}, 2016.
+
+\bibitem{jagielski2018manipulating}
+Matthew Jagielski, Alina Oprea, Battista Biggio, Chang Liu, Cristina
+  Nita-Rotaru, and Bo~Li,
+\newblock ``Manipulating machine learning: Poisoning attacks and
+  countermeasures for regression learning,''
+\newblock in {\em 2018 IEEE Symposium on Security and Privacy (SP)}. IEEE,
+  2018, pp. 19--35.
+
+\bibitem{li2020adversarial}
+Deqiang Li and Qianmu Li,
+\newblock ``Adversarial deep ensemble: Evasion attacks and defenses for malware
+  detection,''
+\newblock {\em IEEE Transactions on Information Forensics and Security}, vol.
+  15, pp. 3886--3900, 2020.
+
+\bibitem{kim2021zero}
+Sungrae Kim and Hyun Kim,
+\newblock ``Zero-centered fixed-point quantization with iterative retraining
+  for deep convolutional neural network-based object detectors,''
+\newblock {\em IEEE Access}, vol. 9, pp. 20828--20839, 2021.
+
+\bibitem{liu2017neural}
+Yuntao Liu, Yang Xie, and Ankur Srivastava,
+\newblock ``Neural trojans,''
+\newblock in {\em 2017 IEEE International Conference on Computer Design
+  (ICCD)}. IEEE, 2017, pp. 45--48.
+
+\bibitem{liu2018fine}
+Kang Liu, Brendan Dolan-Gavitt, and Siddharth Garg,
+\newblock ``Fine-pruning: Defending against backdooring attacks on deep neural
+  networks,''
+\newblock in {\em International Symposium on Research in Attacks, Intrusions,
+  and Defenses}. Springer, 2018, pp. 273--294.
+
+\end{thebibliography}

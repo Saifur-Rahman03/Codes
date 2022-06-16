@@ -1,0 +1,9 @@
+18	NAim	2.400000
+7	Shuvo	3.700000
+47	Tushar	3.750000
+4	Sajon	3.800000
+51	Suborno	3.850000
+2	Tonmoy	3.900000
+3	Mahim	4.000000
+1	Audity	4.000000
+55	Rashid	4.000000

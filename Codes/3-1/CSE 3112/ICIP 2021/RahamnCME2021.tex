@@ -1,0 +1,50 @@
+% Template for ICME 2020 paper; to be used with:
+%          spconf.sty  - ICASSP/ICIP/ICME LaTeX style file, and
+%          IEEEbib.bst - IEEE bibliography style file.
+% --------------------------------------------------------------------------
+\documentclass{article}
+\usepackage{spconf,amsmath,epsfig}
+\usepackage{url}
+\usepackage{tikz}
+
+\usetikzlibrary{shapes.geometric, arrows}
+
+\let\OLDthebibliography\thebibliography
+\renewcommand\thebibliography[1]{
+	\OLDthebibliography{#1}
+	\setlength{\parskip}{0pt}
+	\setlength{\itemsep}{0pt plus 0.3ex}
+}
+
+\pagestyle{empty}
+
+
+\begin{document}\sloppy
+	
+	% Example definitions.
+	% --------------------
+	\def\x{{\mathbf x}}
+	\def\L{{\cal L}}
+	
+	
+	% Title.
+	\title{Learning LaTex}
+	
+	
+	\name{Md. Zahirul Islam$^{\#}$, Md. Eimran Hossain Eimon$^{\#}$, Boshir Ahmed$^{\#}$}
+	\address{$^{\#}$Rajshahi University of Engineering \& Technology, Rajshahi,  Bangladesh}
+	
+	\maketitle
+	
+	\begin{abstract}
+	Modern video codecs such as HEVC have high capability to minimize the bits and also have an immense complexity because of testing more combinations during the RDO (Rate Distortion Optimization) process. Partitioning a coding unit (CU) into smaller ones is the leading cause of the increased time complexity. For this reason, we need a fast and efficient algorithm for real-time applications. In this paper, we proposed an approach for reducing the time complexity of CU splitting by using decision tree classifier. By using the proposed method, it is possible to skip a block if the block contains only a single motion, i.e. if the block falls in a homogeneous region. Experimental results show that on average 45.02\% time complexity reduction is possible by implementing the skip criterion. However, as a trade-off on average 1.38\% bit rate is increased over standalone HEVC.
+	\end{abstract}	
+	\begin{keywords}
+		VVC, HEVC
+	\end{keywords}
+
+	
+	\bibliographystyle{IEEEbib}
+	%\bibliography{References_islam2021}
+	
+\end{document}

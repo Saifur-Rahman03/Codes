@@ -1,0 +1,8 @@
+1 audity 10000
+3 mehrab 100000
+4 sajon 10000000
+7 shuvo 8000
+18 naim 10
+47 tushar 30000
+51 suborno 40000
+55 rashid 900000

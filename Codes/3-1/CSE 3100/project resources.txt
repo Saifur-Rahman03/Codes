@@ -1,0 +1,8 @@
+Things I need to know
+#python
+#jango
+#jason #framework
+#headop
+#larabel #framework
+#mysql #database
+#data engineering 

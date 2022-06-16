@@ -1,0 +1,40 @@
+no. of array elements: 10000
+no. of operations: 508930
+
+
+no. of array elements: 20000
+no. of operations: 989691
+
+
+no. of array elements: 30000
+no. of operations: 1477464
+
+
+no. of array elements: 40000
+no. of operations: 2012069
+
+
+no. of array elements: 50000
+no. of operations: 2630070
+
+
+no. of array elements: 60000
+no. of operations: 3030089
+
+
+no. of array elements: 70000
+no. of operations: 3636528
+
+
+no. of array elements: 80000
+no. of operations: 4276097
+
+
+no. of array elements: 90000
+no. of operations: 5012009
+
+
+no. of array elements: 100000
+no. of operations: 5393289
+
+

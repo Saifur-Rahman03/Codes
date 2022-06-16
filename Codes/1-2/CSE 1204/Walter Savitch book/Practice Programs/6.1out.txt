@@ -1,0 +1,10 @@
+No. of 0 = 4
+No. of 1 = 1
+No. of 2 = 1
+No. of 3 = 5
+No. of 4 = 2
+No. of 5 = 3
+No. of 6 = 2
+No. of 7 = 3
+No. of 8 = 2
+No. of 9 = 2

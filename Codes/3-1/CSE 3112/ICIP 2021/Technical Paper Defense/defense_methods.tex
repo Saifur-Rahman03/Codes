@@ -1,0 +1,130 @@
+% Template for ICME 2020 paper; to be used with:
+%          spconf.sty  - ICASSP/ICIP/ICME LaTeX style file, and
+%          IEEEbib.bst - IEEE bibliography style file.
+% --------------------------------------------------------------------------
+\documentclass{article}
+\usepackage{spconf,amsmath,epsfig}
+\usepackage{url}
+\usepackage{tikz}
+\usepackage{multirow}
+\usepackage{tabularx}
+
+
+\usetikzlibrary{shapes.geometric, arrows}
+
+\let\OLDthebibliography\thebibliography
+\renewcommand\thebibliography[1]{
+	\OLDthebibliography{#1}
+	\setlength{\parskip}{0pt}
+	\setlength{\itemsep}{0pt plus 0.3ex}
+}
+
+\pagestyle{empty}
+\begin{document}\sloppy
+	
+	% Example definitions.
+	% --------------------
+	\def\x{{\mathbf x}}
+	\def\L{{\cal L}}
+	
+	
+	% Title.
+	\title{Title}
+	
+	
+	\name{Names}
+	\address{$^{\#}$Rajshahi University of Engineering \& Technology, Rajshahi,  Bangladesh}
+	
+	\maketitle
+	\begin{abstract}
+		content...
+	\end{abstract}
+	
+	\section{Defense Methods}
+	\label{sec:Defense Methods}
+	
+	Nowadays many studies have been done to ensure AI’s security.So, The attackers won’t be able to affect the data in various cases. Three methods were suggested by Hendrycks and Gimpel \cite{hendrycks2016early} for finding adversarial images. A hardware-assisted randomization method against adversarial examples was proposed by Zhang et al. \cite{zhang2020hrae} to defend against many adversarial attacks. Now AI attacks have three divisions: evasive attack, poisoning attacks, and backdoor attack. Defense Techniques of the AI system during various phases like collection of data, training and use of model are listed in Table \ref{mytable}. Moreover, more studies are needed to strengthen the understanding of ML and to build AI security platforms \cite{kong2021survey}.
+	\\\\
+	\textit{4.1 Evasive Attack’s Defense Methods}
+	\\\\
+	\textit{4.1.1 Adversarial Training.}
+	An essential way to strengthen the robustness of neural network models is Adversarial Training. This technique’s main rule is, it uses known attack techniques to generate adversarial samples in the model training stage. After that it adds samples to training set of the model, and the model is trained again and again till a new model is generated which can resist disturbance. So, this technique strengthens the robustness of the new model as well as it also strengthens accuracy and standardization of the model.
+	\\
+	E-ABS (analysis-by-synthesis) proposed by Ju et al. \cite{ju2020abs}, can broaden the ABS robust classification model to more difficult image domains. The basic elements include: (1) generation model; (2) discriminative loss; (3) variational inference; (4) lower bound for the robustness of E-ABS. Nonetheless, the generation model is responsive to image likeliness calculations. The operational effectiveness and the reasoning of ABS-like model are low on huge datasets.
+	\\\\
+	\textit{4.1.2 Network Distillation.}
+	The method of compressing the knowledge of a large network into smaller networks is called Distillation. Specialist models signifies that, multiple specialized networks can be trained to upgrade the model performance for a large network. The use of distillation is normally to train a model at first which is large.  Then the large model is heated. Soft target is the output of large model and the data label becomes hard target. Then the two are merged to train the small model.
+	\\
+	The basic idea of the network distillation technique is to series many DNNs in the training stage. Here, Former DNN generates classification results and these results are used to train the later DNN. Papernot et al. \cite{papernot2016distillation} established that the transfer knowledge decreases sensitivity of model and enhances the robustness of the AI model. Hence, network distillation technology is suggested to provide defense against evasive attacks, and it has been tested on MNIST and CIFAR-10 datasets.
+	
+	\begin{table*}[t]
+		\centering
+		\caption{The security defense technology of AI}
+		\begin{tabular}{c c c c}
+			\hline
+			Type & \multicolumn{3}{c}{Phase} \\
+			& Data collection phase & Model train phase & Model usage phase \\
+			\hline
+			Evasive attack & Generating adversarial examples & 
+			\begin{tabular}{c}
+				Network distillation; \\
+				adversarial training	
+			\end{tabular}
+			&
+			\begin{tabular}{c}
+				Adversarial examples detection; \\ 
+				input reconstruction; \\
+				DNN model validation 	
+			\end{tabular}
+			\\
+			Poisoning attack & 
+			\begin{tabular}{c}
+				Filtering training data; \\
+				regression analysis
+			\end{tabular}
+			& Integration analysis & \\
+			Back door attack & & Model pruning & Input preprocessing \\ 
+			\hline
+		\end{tabular}
+		\label{sec: mytable}
+	\end{table*}
+	
+	\textit{4.1.3 Adversarial Example Detection.}
+	The main purpose of adversarial example detection is to detect that is either an example is adversarial or not, and it is done by adding the detection element of the external detection model or the original model which is used is the usage state. The detection model identifies an example as adversarial example or not before the input example gets to original model. The detection model is also able to extract appropriate information from each part of the original model and synthesize different information. Several detection models can use various criteria to evaluate whether the input is adversarial or not \cite{carrara2018adversarial}.
+	\\\\
+	\textit{4.1.4 Input Reconstruction.}
+	The concept of input reconstruction is that the input samples are changed to withstand evasive attack when the model is in use stage, and the changed data will not influence the normal classification function. Some reconstruction methods are noising, preprocessing, denoising, gradient-masking and auto encoder that changes the input examples \cite{gu2014towards}.
+	\\\\
+	\textit{4.1.5 DNN Verification.}
+	DNN verification technology verifies properties of DNN models by using solvers, like proving that no adversarial example is found within a particular disturbance range. Nonetheless, the efficiency of solver is low and the DNN model is also confirmed as NP-complete problem. But the operation efficiency can be improved by selection and optimization, like validation by region, sharing validation information \cite{qian2020towards}.
+	\\\\
+	\textit{4.1.6 Data Augmentation.}
+	The insufficiency of data is a real-life problem. Data augmentation solves the problem by enlarging the original training sets. And it is done by generating adversarial samples. When a large amount of data is lacking, it produces enough samples to make sure that the training of model is done effectively\cite{shi2018schmidt}.
+	\\\\
+	\textit{4.2 Poisoning Attack’s Defense Methods}
+	\\\\
+	\textit{4.2.1 Training Data Filtering.}
+	The main purpose of this technique is to control the training dataset and it uses various methods to stop the poisoning attack. Particular directions include \cite{laishram2016curie}: finding probable poisoning attack data points and filtering the points during next training; a method is used to decrease sampling data which could be used by poisoning attack, this method is called model contrast filtering method. The filtered data is used against the attack.
+	\\\\
+	\textit{4.2.2 Regression Analysis.}
+	This method is used to detect outliers and noise in datasets, and it is based on statistics. There are particular method including various loss functions to check the outliers. This uses distribution properties of data for identification \cite{jagielski2018manipulating}, etc. 
+	\\\\
+	\textit{4.2.3 Ensemble Learning.}
+	It is used to build and merge multiple machine learning classifiers to enhance the ability of the ML system to withstand poisoning attacks. Multiple models which are independent joins and forms the AI system. And the systems possibility to get affected by poisoning attack is reduced to the numerous training datasets affected by multiple models \cite{li2020adversarial}.
+	\\\\
+	\textit{4.2.4 Iterative Retraining.}
+	Iterative retraining means repeated training of neural networks. This method generates adversarial examples following an attack model and adds these examples to the training data. Then it attacks the neural model and repeats the process \cite{kim2021zero}.
+	\\\\
+	\textit{4.3 Backdoor Attack’s Defense System}
+	\\\\
+	\textit{4.3.1 Input Processing.}
+	The principle of this method is to purify the input. The filtering process decreases the risk of input triggering the back door. It also reduces the risk of changing the model judgement \cite{liu2017neural}. Generally, data can be divided into two types: continuous and discrete. The data in image is continuous. The Preprocessing operation is differentiable and linear such as mean standardization. The data in a text is discrete and the pretreatment operation is nondifferentiable and nonlinear.
+	\\\\
+	\textit{4.3.2 Model Pruning.}
+	The term pruning in neural network came from synaptic pruning which occurs in human brain. The axons and dendrites of human brain becomes dead in this synaptic elimination process. It occurs between childhood and puberty in mammals. This model focuses on cutting of the neurons of the original model. Thus, it reduces the possibility of backdoor neurons, where the condition for backdoor neuron is that normal function is consistent. The backdoor neurons can be removed by using a fine-grained pruning method \cite{liu2018fine}.
+	
+	
+	\bibliographystyle{IEEEbib}
+	\bibliography{references_defense}
+	
+\end{document}

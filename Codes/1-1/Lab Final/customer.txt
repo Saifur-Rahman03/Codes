@@ -1,0 +1,8 @@
+1 1 audity 100 200
+3 3 mehrab 500 1000
+4 4 sajon 600 800
+7 7 shuvo 400 700
+18 18 naim 300 3000
+47 47 tushar 800 9800
+51 51 suborno 450 4500
+55 55 rashid 120 3400
