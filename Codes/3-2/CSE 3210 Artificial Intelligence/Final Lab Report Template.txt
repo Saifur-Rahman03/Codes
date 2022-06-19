@@ -1,0 +1,11 @@
+Name (Topic)
+Theory
+Objectives
+Working Principles
+Pseudocode
+Discussion
+	Result
+	Analysis
+	Criticism
+	Difficulties
+	Conclusion

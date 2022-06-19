@@ -1,0 +1,7 @@
+router ospf 1/2/3
+network (connected network id) 	wildcard mask(main mask - subnet mask) area 1
+
+255.255.255.0
+255.255.255.255k
+
+= 0.0.0.255 (wildcard mask)
