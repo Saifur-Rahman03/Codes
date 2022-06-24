@@ -1,0 +1,225 @@
+Router mode
+1. Enable '>'
+2. Privilege '#'
+3. Global Config '(config)#'
+Enable -> ('en' / 'enable') -> Privilege -> ('config t' / 'config terminal') -> global config mode
+Router to switch connection:
+	en
+	config t
+interface 'wirename' [Example: gig0/0/0, fa0/0]
+	ip address 'gateway_address' 'subnet mask'
+	no shutdown
+Change Router name:
+	hostname 'name' 
+1. Telnet Connection
+(global config mode)
+	enable secret 'password'
+now, if we change mode from enable to privilege mode, we will need to give password.
+Telnet configuration (Router CLI):
+	line vty 0 5 [this means 0 - 5 or 6 users at a time can access the telnet]
+	login
+	password 'telnet_password' [give a password]
+	end
+	end [Telnet saved]
+	exit [return to enable mode] 
+Now in any PC's command prompt:
+	telnet 'gateway address'
+	give telnet password	
+[Now you can access the router from PC, this is with the help of telnet]
+[Anything you did in router cli, you can now do it from PC's command prompt]
+2. Static Routing
+Router Configuration [Do this to each Router]:
+	enable
+	config t
+	hostname 'Router_name' [optional]
+	interface 'wirename'
+	ip address 'network host_address' 'subnet mask'
+	no shutdown
+	exit
+Static Routing [Do this for each route/ network in each router]:
+	ip route 'destination network_address' 'Subnet mask' 'Next hop_address'
+'destination network_add' = each network which is not connected with the router
+'next hop_add' = next router's entrance address for going to the destination address
+3. DHCP (Dynamic Host Configuration Protocol)
+automatically assigns IP address to the pcs
+Switch gateway config:
+	en / enable
+	config t / config terminal
+	hostname 'router_name'
+	int fa0/0
+	ip add 'gateway_add' 'subnet_mask'
+	no sh/ shutdown
+dhcp config:
+	ip dhcp	pool 'poolname'
+	default-router 'gateway_address'
+	network 'corresponding network_address' 'subnet mask'
+	exit
+Connections
+ 
+Router to switch Configuration (DHCP)
+R1:
+	en
+	config t
+	hostname R1
+	int gig0/0/0
+	ip add 192.168.1.3 255.255.255.0
+	no sh
+	exit
+	ip dhcp pool p1
+	default-router 192.168.1.3
+	network 192.168.1.0 255.255.255.0
+	exit
+R2:
+	en
+	config t
+	hostname R2
+	int gig0/0/0
+	ip add 192.168.2.3 255.255.255.0
+	no sh
+	exit
+	ip dhcp pool p2
+	default-router 192.168.2.3
+	network 192.168.2.0 255.255.255.0
+	exit
+R3:
+	en
+	config t
+	hostname R3
+	int gig0/0/0
+	ip add 192.168.3.3 255.255.255.0
+	no sh
+	exit
+	ip dhcp pool p3
+	default-router 192.168.3.3
+	network 192.168.3.0 255.255.255.0
+	exit
+Router to Router Connection
+R1:
+	en
+	config t
+	int se0/1/0
+	ip add 10.0.0.1 255.0.0.0
+	no sh
+	exit
+R2:
+	en
+	config t
+int se0/1/0
+	ip add 10.0.0.2 255.0.0.0
+	no sh
+	int se 0/1/1
+	ip add 11.0.0.1 255.0.0.0
+	no sh		
+exit
+R3:
+	en
+	config t
+int se0/1/0
+	ip add 11.0.0.2 255.0.0.0
+	no sh
+	exit
+
+4. Dynamic Routing
+RIP (Routing Information Protocol): 
+Router sends all the routing table.
+RIPV1: (not used anymore)
+	Router rip 
+	network ‘network_address’
+	network ‘network_address’
+Ripv2: (do this in each router)
+	en
+	config t
+	Router rip
+	Version 2
+	no auto-summary
+	network ‘network_address’ [Connected networks with the router]
+	network ‘network_address’ 
+RIP
+R1:
+	router rip
+	ver 2
+	no auto-summary
+	network 192.168.1.0
+	network 10.0.0.0
+
+R2:
+	router rip
+	ver 2
+	no auto-summary
+	network 192.168.2.0
+	network 10.0.0.0
+	network 11.0.0.0
+R3:
+	router rip
+	ver 2
+	no auto-summary
+	network 192.168.3.0
+	network 11.0.0.0
+
+
+OSPF (Open Shortest Path First):
+Router only sends updated network info.
+	router ospf 1
+	network ‘network_id’ ‘wildcard mask’ area 0 [Connected networks with the router]
+	network ‘network_id’ ‘wildcard mask’ area 0 [area needs to be same for all routers]
+Wildcard mask: 255.255.255.255 – corresponding subnet mask
+
+subnet mask = 255.255.255.0
+wildcard mask = 0.0.0.255
+OSPF
+R1:
+	router ospf 1
+	network 192.168.1.0 0.0.0.255 area 0
+	network 10.0.0.0 0.255.255.255 area 0
+R2:
+	router ospf 2
+	network 192.168.2.0 0.0.0.255 area 0
+	network 10.0.0.0 0.255.255.255 area 0
+	network 11.0.0.0 0.255.255.255 area 0
+R3:
+	router ospf 3
+	network 192.168.3.0 0.0.0.255 area 0
+	network 11.0.0.0 0.255.255.255 area 0
+
+
+
+
+5. Switch Port Security
+uses MAC address (48 bit)
+1.	Protected: Does not give access
+2.	Restricted: 1 + Sends a message to the admin
+3.	Shutdown: 1 + Shuts down PC
+Commands:
+config t
+	interface ‘wire_name’
+	switchport mode access
+	switchport port-security
+	switchport port-security mac-address sticky [dynamically accesses mac address]
+	switchport port-security maximum 1 [maximum no. of users]
+	switchport port-security violation ‘mode’ [protect/restrict/shutdown]
+
+In Switch CLI:
+Privilege mode
+	en
+	show port-security
+	show port-security interface fa0/1
+	show port-security address
+Global config mode
+	config t
+	interface fa0/1
+	switchport mode access
+	switchport port-security
+	switchport port-security mac-address sticky
+	switchport port-security maximum 1
+	switchport port-security violation shutdown
+After that you must ping from one pc to another to activate port security. And wait patiently, it takes time.
+6. DNS (Domain Name Server)
+It converts domain name to corresponding IP address.
+PC -> Switch -> Server
+In Server's 
+•	DNS Server option, give a server address. [192.168.0.1]
+•	Desktop option, type IP address same as server address. [192.168.0.1]
+•	Services -> DNS option, turn on DNS service, give name and corresponding network address. [‘www.learnnetworking.com’, 192.168.0.1] then click add.
+•	Services -> HTTP -> index.html, edit, whatever you want to see in your website.
+•	Now in each PC give IP address and DNS server.
+•	Now from PC’s web browser go to ‘www.learnnetworking.com’. You can also type ‘192.168.0.1’ and get the same website.
