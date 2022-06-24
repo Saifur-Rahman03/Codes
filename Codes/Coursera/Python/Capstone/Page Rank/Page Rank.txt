@@ -1,0 +1,12 @@
+Search Engine Architecture:
+Web Crawling / Spidering
+Index Building
+Searching
+
+Web Crawler:
+is a computer program that browses the www in a methodological, automated manner.
+mainly used to create a copy of all the visited pages for later processing by a search engine that wil index the downloaded pages to provide fast searches.
+-- retrieve a page
+look through pages for links
+add the links to a list of "retrieved" sites
+repeat

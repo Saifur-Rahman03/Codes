@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Maiden01.1</string>
+    <string name="Button_name1">Login</string>
+    <string name="Button_name2">Logout</string>
+</resources>

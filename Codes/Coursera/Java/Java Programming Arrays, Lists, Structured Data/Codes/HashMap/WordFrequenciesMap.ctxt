@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=WordFrequenciesMap
+comment1.params=fr
+comment1.target=void\ countTotalWords(edu.duke.FileResource)
+comment2.params=fr
+comment2.target=void\ countWords(edu.duke.FileResource)
+comment3.params=
+comment3.target=void\ testCountWords()
+numComments=4

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/EditText1ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:hint="@string/edit_text1"
+            android:textStyle="italic"
+            android:textSize="18sp"
+            android:inputType="numberDecimal"
+            android:backgroundTint="#141414"
+            android:textCursorDrawable="@null"
+            />
+
+        <EditText
+            android:id="@+id/EditText2ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:hint="@string/edit_text2"
+            android:textStyle="italic"
+            android:textSize="18sp"
+            android:inputType="numberDecimal"
+            android:backgroundTint="#141414"
+            android:textCursorDrawable="@null"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/EditText3ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:hint="@string/edit_text3"
+            android:textStyle="italic"
+            android:textSize="18sp"
+            android:inputType="numberDecimal"
+            android:backgroundTint="#141414"
+            android:textCursorDrawable="@null"
+            />
+
+        <EditText
+            android:id="@+id/EditText4ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:hint="@string/edit_text4"
+            android:textStyle="italic"
+            android:textSize="18sp"
+            android:inputType="numberDecimal"
+            android:backgroundTint="#141414"
+            android:textCursorDrawable="@null"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/Button1ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="20sp"
+            android:textStyle="bold"
+            android:text="@string/button_text" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:id="@+id/TextViewID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:padding="20sp"
+            android:layout_margin="20dp"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,11 +1,11 @@
-; hexadecimal input/binary output
+; hexadecimal input/output
 
 .MODEL SMALL
 .STACK 100H
 
 .DATA 
 MSG1 DB 'Enter a hexadecimal character: $'
-MSG2 DB 0DH, 0AH, 'Input was: $'
+MSG2 DB 'Input was: $'
 
 .CODE
 MAIN PROC
@@ -44,32 +44,7 @@ MAIN PROC
             
     LOOP MY_INPUT
     
-    LEA DX, MSG2        ;show second message prompt
-    MOV AH, 9      
-    INT 21H
     
-    MOV CX, 16           ;loop 16 times
-    my_output:
-    
-    SHL BX, 1           ;left shift to carry flag
-    JC print_y          ;if carry set to 1 jump to print_y
-    
-    
-    print_n:            ;else 
-    MOV DL, 30H         ;print 0
-    MOV AH, 2
-    INT 21H
-    
-    JMP do_nothing
-    
-    print_y:            
-    MOV DL, 31H         ;print 1
-    MOV AH, 2
-    INT 21H
-    
-    do_nothing:
-    
-    LOOP my_output
     
     ;DOS exit
     MOV AH, 4CH

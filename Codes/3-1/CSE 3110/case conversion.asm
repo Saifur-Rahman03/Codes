@@ -2,9 +2,8 @@
     CR EQU 0DH
     LF EQU 0AH
 MSG1 DB 'ENTER A LOWER CASE LETTER: $'
-
 MSG2 DB 0DH,0AH,'IN UPPER CASE IT IS: '
-CHAR DB ?, '$'
+CHAR DB ?,'$'
 
 .CODE
 MAIN PROC
@@ -19,7 +18,7 @@ MAIN PROC
 ;input a character and convert it to upper case
     MOV AH,1        ;read character function
     INT 21H         ;read a small letter into AL
-    SUB AL,20H      ;convert it to upper case
+    ADD AL,20H      ;convert it to upper case
     MOV CHAR,AL     ;and store it
 ;display on the next line
     LEA DX,MSG2     ;get second message

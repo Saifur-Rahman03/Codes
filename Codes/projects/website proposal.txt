@@ -1,0 +1,6 @@
+idea,
+features,
+languages,
+framework,
+front end,
+back end

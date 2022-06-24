@@ -1,0 +1,3 @@
+CSS = Cascading Style Sheets.
+class =  many elements sign: .
+id = one element sign: #

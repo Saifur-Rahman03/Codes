@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#E2F5D6"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/tapButtonID"
+        android:padding="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_name"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:drawableRight="@drawable/tap"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="50dp"
+        />
+    <TextView
+        android:id="@+id/textViewID1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/textViewID2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/textViewID3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/textViewID4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+    <Button
+        android:id="@+id/resetButtonID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_name2"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+
+        />
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+// write your code here
+var image = new SimpleImage("smalllion.jpg");
+print(image);
+var w = 200;
+var h = 150;
+var img = crop(image, w, h);
+print(img);
+
+function crop(image, width, height) {
+    var img = new SimpleImage(width, height);
+    for(var pixel of img.values()) {
+        var x = pixel.getX();
+        var y = pixel.getY();
+        px = image.getPixel(x, y);
+        img.setPixel(x, y, px);
+    }
+    return img;
+}

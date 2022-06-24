@@ -1,0 +1,7 @@
+Data Analysis:
+A process of inspecting, cleansing, transforming and modelling
+data with the goal of discovering useful information, informing
+conclusion and supporting decision-making.
+
+Data extraction -> Data Cleaing -> Data wrangling -> Analysis
+-> Action

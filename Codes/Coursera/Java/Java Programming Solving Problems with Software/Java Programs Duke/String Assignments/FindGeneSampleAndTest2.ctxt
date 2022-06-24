@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=FindGeneSampleAndTest2
+comment0.text=\r\n\ Write\ a\ description\ of\ FindGeneSampleAndTest2\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=void\ testGeneSample()
+comment2.params=dna\ startCodon\ stopCodon
+comment2.target=java.lang.String\ findGeneSample(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment3.params=dna\ startCodon\ stopCodon
+comment3.target=int\ checkCase(java.lang.String,\ java.lang.String,\ java.lang.String)
+numComments=4

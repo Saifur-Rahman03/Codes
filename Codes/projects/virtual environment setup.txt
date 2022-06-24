@@ -1,0 +1,2 @@
+python -m venv virt
+source virt/Scripts/activate

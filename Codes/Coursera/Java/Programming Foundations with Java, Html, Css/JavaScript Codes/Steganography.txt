@@ -1,0 +1,51 @@
+// write your code here
+var original = new SimpleImage("usain.jpg");
+var hide = new SimpleImage("skyline.jpg");
+print(original);
+print(hide);
+
+original = chop2hide(original);
+hide = shift(hide);
+print(original);
+print(hide);
+var stereo = combine(original, hide);
+print(stereo);
+
+
+
+
+
+function clearbits ( pixval ) {
+    var x = Math.floor( pixval / 16 ) * 16;
+    return x;
+}
+
+function chop2hide ( image ) {
+    for(var pixel of image.values()) {
+        pixel.setRed(clearbits(pixel.getRed()));
+        pixel.setGreen(clearbits(pixel.getGreen()));
+        pixel.setBlue(clearbits(pixel.getBlue()));
+    }
+    return image;
+}
+function shift ( image ) {
+    for(var pixel of image.values()) {
+        pixel.setRed(pixel.getRed() / 16);
+        pixel.setGreen(pixel.getGreen() / 16);
+        pixel.setBlue(pixel.getBlue() / 16);
+    }
+    return image;
+}
+function combine( img1, img2 ) {
+    var img = new SimpleImage(img1.width, img1.height);
+    for(var pixel of img.values()) {
+        var x = pixel.getX();
+        var y = pixel.getY();
+        var px1 = img1.getPixel(x, y);
+        var px2 = img2.getPixel(x, y);
+        pixel.setRed(px1.getRed() + px2.getRed());
+        pixel.setGreen(px1.getGreen() + px2.getGreen());
+        pixel.setBlue(px1.getBlue() + px2.getBlue());
+    }
+    return img;
+}

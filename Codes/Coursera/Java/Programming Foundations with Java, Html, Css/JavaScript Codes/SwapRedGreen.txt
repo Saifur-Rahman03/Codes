@@ -1,0 +1,17 @@
+// write your code here
+var img =  new SimpleImage("smalllion.jpg");
+print(img);
+
+
+for(var pixel of img.values()) {
+    swapGreenRed(pixel);
+} 
+
+print(img);
+
+
+function swapGreenRed(p) {
+    p.setGreen(p.getRed());
+    p.setRed(p.getGreen());
+    return pixel
+}

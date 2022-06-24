@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Tasbih</string>
+    <string name="button_name">Tap</string>
+    <string name="button_name2">Reset</string>
+</resources>

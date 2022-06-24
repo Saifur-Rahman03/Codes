@@ -1,0 +1,31 @@
+// write your code here
+var x = 3;
+var y = 3 * x;
+var a = "A";
+var b = "B";
+
+print(y);
+print(cube(y));
+print(concatination(a, b));
+
+function cube(x) {
+    return x * x * x;    
+}
+function concatination(x, y) {
+    return x + y;
+}
+var image = new SimpleImage("chapel.png");
+
+var h = image.getHeight();
+var w = image.getWidth();
+var p = image.getPixel(0, 0);
+var r = image.getRed(0, 0);
+var b = image.getBlue(0, 0);
+var g = image.getGreen(0, 0);
+
+print(h);
+print(w);
+print(p);
+//print(r);
+//print(g);
+//print(b);

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CT Marks</string>
+    <string name="edit_text1">CT No 1</string>
+    <string name="edit_text2">CT No 2</string>
+    <string name="edit_text3">CT No 3</string>
+    <string name="edit_text4">CT No 4</string>
+    <string name="button_text">Average</string>
+
+</resources>

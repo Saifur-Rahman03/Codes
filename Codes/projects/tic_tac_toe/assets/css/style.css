@@ -1,0 +1,19 @@
+.body {
+  text-align: center;
+  padding: 25px;
+  background-color: lightblue;
+  color: rgb(70, 70, 70);
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: rgb(70, 70, 70);
+  color: lightblue;
+}
+.form-control {
+    border-color: red;
+    color: black;
+    padding: 3px;
+    width: 300pt;
+    height: 15pt;
+}

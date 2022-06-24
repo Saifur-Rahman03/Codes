@@ -1,0 +1,9 @@
+html = HyperText Markup Language (Not a programming language)
+
+Different types of elements:
+Metadata elements:
+	Information about the page
+	tags: <html>, <head>, <title>
+Sectioning elements:
+	Define Regions
+	tags: <body>, <h1>, <div>

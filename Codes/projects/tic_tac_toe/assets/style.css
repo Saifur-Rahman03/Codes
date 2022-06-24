@@ -1,0 +1,11 @@
+  .myDIV {
+    padding: 25px;
+    background-color: lightblue;
+    color: blue;
+    font-size: 25px;
+  }
+  
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }

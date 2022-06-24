@@ -1,0 +1,32 @@
+// write your code here
+
+var img = new SimpleImage("duvall.jpg");
+print(img);
+var h = img.getHeight();
+var w = img.getWidth();
+var blankImg = new SimpleImage(img.width, img.height);
+print(w);
+print(h);
+for(var pixel of img.values()) {
+    var x = pixel.getX();
+    var y = pixel.getY();
+    var r = (Math.random());
+    if(r < 0.5){
+        blankImg.setPixel(x, y, pixel);
+    }    
+    else {
+        var x1 = x + Math.round(Math.random() * 10) - 5;
+        var y1 = y + Math.round(Math.random() * 10) - 5;
+        if(x1 > 0 && y1 > 0 && x1 < w - 1 && y1 < h - 1){
+            var blurPixel = img.getPixel(x1, y1);
+            blankImg.setPixel(x, y, blurPixel);
+            
+        }
+        else {          
+            blankImg.setPixel(x, y, pixel);
+            
+        }
+        
+    }
+}
+print(blankImg);
