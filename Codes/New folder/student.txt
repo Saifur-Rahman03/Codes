@@ -1,0 +1,49 @@
+class Student extends People{ 
+
+    protected String sid; 
+
+    protected int score;
+    
+    public Student(){
+    	name="Pinita Student";
+    	id="1";
+    }
+    
+    public Student(String id, String name, String sid, int score) { 
+
+        super(id, name); 
+
+        this.sid = sid; 
+
+        this.score = score; 
+
+    } 
+
+    public void setName(String newName) {
+    	name = newName;
+    } 
+    public void setId(String newId) {
+     	id = newId;
+     }
+    public String getId() {
+     	return id;
+     }
+
+   
+
+   
+    public String getName() {
+    	return name;
+    }
+
+  
+
+    public void say() { 
+
+        System.out.println("I'm a student. My name is " + this.name + "."); 
+
+    } 
+
+ 
+
+} 
