@@ -1,0 +1,8 @@
+function main () 
+suru
+       mone_kori a akta integer
+       mone_kori b akta integer
+       a equal 2
+       b equal 3 add a sub 10
+       print kori b
+sesh

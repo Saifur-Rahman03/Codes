@@ -1,0 +1,3 @@
+consider X an INTEGER = IN();
+consider Y an INTEGER = X-- + 5;
+OUT(Y);

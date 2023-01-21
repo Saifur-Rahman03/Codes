@@ -1,0 +1,4 @@
+INT num1 = input() + 50
+INT num2 = input() - num1
+output(num2)
+

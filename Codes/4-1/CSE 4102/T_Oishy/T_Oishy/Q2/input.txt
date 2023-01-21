@@ -1,0 +1,6 @@
+LT X is INT;
+X = TAKE_INPUT();
+X+=10;
+LT Y is INT = X;
+GIVE_OUTPUT(Y);
+GIVE_OUTPUT(X);

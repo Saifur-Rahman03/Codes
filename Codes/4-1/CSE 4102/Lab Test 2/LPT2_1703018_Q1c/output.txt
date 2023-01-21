@@ -1,0 +1,3 @@
+In line no 2, ID counter is not declared.
+In line no 2, Inserting counter with type INT_TYPE in symbol table.
+Parsing finished!

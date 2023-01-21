@@ -1,0 +1,3 @@
+He -> HE
+Loves -> LOVES
+Burger -> FOOD

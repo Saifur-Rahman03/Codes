@@ -1,0 +1,11 @@
+RUET -> RUET
+ EEE -> EEE
+ 17 -> 17_SERIES
+
+CUET -> CUET
+ 18 -> 18_SERIES
+ CSE -> CSE
+
+BUET -> BUET
+ EEE -> EEE
+ 19 -> 19_SERIES

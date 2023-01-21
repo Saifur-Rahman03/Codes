@@ -1,0 +1,23 @@
+Q1.
+gcc -o HelloWorld HelloWorld.c 		.c -> .exe
+gcc -E HelloWorld.c > HelloWorld.i     	.c -> (preprocess, macro extension) -> .i
+gcc -S -masm=intel HelloWorld.i		.i -> (assembly file) -> .s
+as -o HelloWorld.o HelloWorld.s		.s -> .o
+objdump -M intel -d HelloWorld.o > HelloWorld.dump (readable version of .o) 
+
+
+Q2.
+
+input = input.txt
+output = output.txt
+
+Q2a.
+flex prog2.l 
+gcc lex.yy.c
+./a < $(input) > $(output)
+
+Q2b.
+bison -d prog2.y (1st)
+flex prog2.l
+gcc prog2.tab.c lex.yy.c
+./a < $(input) > $(output)

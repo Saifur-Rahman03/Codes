@@ -1,0 +1,62 @@
+Q2a. (.l)
+%option noyywrap
+
+%{
+
+%}
+
+\\Regex
+delim [ \t]
+
+%%
+\\tokens
+"RUET" {printf("%s -> VARSITY", yytext);
+{delim} {}
+%%
+
+int main()
+{
+	yylex();
+	return 0;
+}
+---------------------------------------------------------------------------------------------------
+Q2b (.l)
+%option noyywrap
+
+%{
+	#include "box.tab.h"
+%}
+
+\\regex
+
+%%
+\\tokens
+"RUET" {return(VAR);}
+{delim} {}
+%%
+
+
+Q2b (.y)
+%{
+	#include <stdio.h>
+	void yyerror(char *s);
+	int yylex();	
+%}
+
+%token token_names
+%start name
+
+%%
+name: pattern of tokens {printf("");}
+	;
+%%
+
+int main(){
+	yyparser();
+	printf();
+	return 0;
+}
+
+void yyerror(char *s) {
+	fprintf(stderr, "error: %s\n", s);
+}

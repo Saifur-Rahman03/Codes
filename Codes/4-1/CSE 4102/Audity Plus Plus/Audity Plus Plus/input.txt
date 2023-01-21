@@ -1,0 +1,4 @@
+consider P is INT_NUM =  INPUT();
+consider Q is INT_NUM = 10 + P++; 
+OUT(Q);
+OUT(P);

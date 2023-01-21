@@ -1,0 +1,2 @@
+SUP numbers IS INT ARRAY WITH SIZE [20]; 
+numbers[5.0]=10;

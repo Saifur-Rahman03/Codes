@@ -1,0 +1,9 @@
+Suppose X as INT = SCAN();
+
+X = X--; 
+
+Suppose Y as INT = 10 - X;   
+
+
+PRINT(Y);
+PRINT(X);

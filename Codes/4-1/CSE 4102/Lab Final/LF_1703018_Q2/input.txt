@@ -1,0 +1,28 @@
+function main () 
+begin
+       mone_kori a akta integer
+       mone_kori b akta integer
+       mone_kori m akta integer
+
+       a equal 2
+       b  equal 3 add a sub 10
+       m equal 0
+       
+       jodi a choto hoi b theke
+       begin
+              a +equal 2
+       end
+       abar jodi a boro hoi b theke
+       begin
+              a +equal 2 sub 1
+       end
+       tachara
+       begin
+                m +equal 1
+        end
+
+        jodi a boro hoi 0 theke
+        begin
+               print kori a
+        end
+end

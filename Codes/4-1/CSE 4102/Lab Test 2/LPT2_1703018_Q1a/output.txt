@@ -1,0 +1,14 @@
+let -> LET
+counter -> ID
+as -> AS
+INTEGER -> INT_TYPE
+; -> SEMI
+FOR_LOOP -> FORLOOP
+( -> LP
+counter -> ID
+from -> FROM
+1.0 -> FLOAT_NUM
+to -> TO
+10 -> INT_NUM
+) -> RP
+; -> SEMI
