@@ -1,0 +1,9 @@
+1. Plot the features across x and y axis
+2. Plot the given data as points on the coordinate system
+3. Plot the unknown points.
+4. Calculate euclidean distance from the unknown points to each known point.
+5. k = sqrt(n) & odd number
+6. take k no of nearest points from unknown point
+7. sort the distances
+8. count which class has the most closest distance
+9. assigned to that class
